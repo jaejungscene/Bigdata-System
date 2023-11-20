@@ -18,7 +18,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @JsonPropertyOrder({
         "realtime_start", "realtime_end",
-        "data", "value", "id", "title", "state",
+        "date", "value", "id", "title", "state",
         "frequency_short", "units_short", "seasonal_adjustment_short"
 })
 public class EtlColumnPojo {
@@ -32,7 +32,7 @@ public class EtlColumnPojo {
     @JsonDeserialize(using = LocalDateDeserializer.class)
     private LocalDate realtime_end;
 
-    @JsonProperty("data")
+    @JsonProperty("date")
     @JsonFormat(pattern = "yyyy-MM-dd")
     @JsonDeserialize(using = LocalDateDeserializer.class)
     private LocalDate data;

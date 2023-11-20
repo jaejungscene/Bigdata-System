@@ -37,7 +37,7 @@ public class FredColumnPojo {
     @JsonProperty("title")
     private String title; // #E Series© title hIS
 
-    @JsonProperty ("observation _start")
+    @JsonProperty ("observation_start")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonDeserialize(using = LocalDateDeserializer.class)
     private LocalDate observation_start;
@@ -50,7 +50,7 @@ public class FredColumnPojo {
     @JsonProperty("frequency")
     private String frequency;
 
-    @JsonProperty("frequency short")
+    @JsonProperty("frequency_short")
     private String frequency_short;
 
     @JsonProperty("units")
