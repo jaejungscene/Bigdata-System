@@ -155,7 +155,6 @@ public class Fred2Hdfs {
             if (hadoopFs.exists(hadoopPath)) {
                 hadoopOutStream = hadoopFs.append(hadoopPath);
                 bw = new BufferedWriter(new OutputStreamWriter(hadoopOutStream, StandardCharsets.UTF_8));
-
             } else {
                 hadoopOutStream = hadoopFs.create(hadoopPath, true);
                 bw = new BufferedWriter(new OutputStreamWriter(hadoopOutStream, StandardCharsets.UTF_8));

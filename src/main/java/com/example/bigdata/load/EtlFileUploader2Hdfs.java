@@ -53,6 +53,8 @@ public class EtlFileUploader2Hdfs {
             }
         }
 
+//        throw new Exception();
+
         System.out.println("========================= Real Median Household Income");
         fred.clearInputFiles("src/main/outputs/" , "household_income.csv");
         for (US_STATES state : US_STATES.values()) {
